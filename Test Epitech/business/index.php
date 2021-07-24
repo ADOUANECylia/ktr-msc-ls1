@@ -1,6 +1,6 @@
     <?php
     // création de l'objet PDO pour se connecter à la base de données
-    $bdd = new PDO('mysql:host=localhost;dbname=balist', 'balist', 'Aae86f2c');
+    $bdd = new PDO('mysql:host=localhost;dbname=ep_test', 'balist', 'Aae86f2c');
 
     /*
         Vérification si l'utilisateur existe.
@@ -8,12 +8,13 @@
         */
     function connection($bdd, $login, $pass)
     {
-        $req = $bdd->prepare('SELECT id, login, password FROM connexion WHERE login = ?');
+        $req = $bdd->prepare('SELECT * FROM connexion WHERE login = ?');
         $req->execute(array($login));
         $user = $req->fetch(PDO::FETCH_OBJ);
         if ($user) {
             // on vérifie le mot de passe comme ça si tu utilises password_hash
             // pour crypter les mots de passe
+            $pass = password_hash($pass, PASSWORD_DEFAULT);
             $verif = password_verify($pass, $user->password);
             if ($verif) {
                 // si c'est bon on return les info de l'utilisateur récup dans la table connection juste avant
@@ -25,6 +26,7 @@
     function openSession($user)
     {
         // on rempli les sessions
+        session_start();
         $_SESSION["id"]     = $user->id;
         $_SESSION["login"]  = $user->login;
     }
@@ -51,6 +53,9 @@
             openSession($user);
             header('Location: home.php');
         }
+    }
+    if (session_id()) {
+        header('Location: home.php');
     }
     ?>
 
