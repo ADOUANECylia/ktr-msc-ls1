@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PHPJabbers.com | Free Blog Website Template</title>
+    <title>Business Cards Manager</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +31,7 @@
                         <button id="primary-nav-button" type="button">Menu</button>
                         <a href="index.html">
                             <div class="logo">
-                                <img src="img/logo.png" alt="Venue Logo">
+                               <!-- <img src="img/logo.png" alt="Venue Logo"> -->
                             </div>
                         </a>
                         <nav id="primary-nav" class="dropdown cf">
@@ -49,7 +49,7 @@
         </header>
     </div>
 
-    <section class="banner banner-secondary" id="top" style="background-image: url(img/banner-image-1-1920x300.jpg);">
+    <section class="banner banner-secondary" id="top" );">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -72,7 +72,7 @@
                                 <div class="featured-item">
                                     <div class="thumb">
                                         <div class="thumb-img">
-                                            <img src="img/blog-1-720x480.jpg" alt="">
+                                         
                                         </div>
 
                                         <div class="overlay-content">
@@ -98,7 +98,7 @@
                                 <div class="featured-item">
                                     <div class="thumb">
                                         <div class="thumb-img">
-                                            <img src="img/blog-2-720x480.jpg" alt="">
+                                          
                                         </div>
 
                                         <div class="overlay-content">
@@ -124,7 +124,7 @@
                                 <div class="featured-item">
                                     <div class="thumb">
                                         <div class="thumb-img">
-                                            <img src="img/blog-3-720x480.jpg" alt="">
+                                           
                                         </div>
 
                                         <div class="overlay-content">
@@ -150,7 +150,7 @@
                                 <div class="featured-item">
                                     <div class="thumb">
                                         <div class="thumb-img">
-                                            <img src="img/blog-4-720x480.jpg" alt="">
+                                         
                                         </div>
 
                                         <div class="overlay-content">
@@ -176,7 +176,7 @@
                                 <div class="featured-item">
                                     <div class="thumb">
                                         <div class="thumb-img">
-                                            <img src="img/blog-5-720x480.jpg" alt="">
+                                          
                                         </div>
 
                                         <div class="overlay-content">
@@ -202,7 +202,7 @@
                                 <div class="featured-item">
                                     <div class="thumb">
                                         <div class="thumb-img">
-                                            <img src="img/blog-6-720x480.jpg" alt="">
+                                            
                                         </div>
 
                                         <div class="overlay-content">
@@ -261,7 +261,7 @@
                 <div class="col-md-5">
                     <div class="about-veno">
                         <div class="logo">
-                            <img src="img/footer_logo.png" alt="Venue Logo">
+                           
                         </div>
                         <p>Mauris sit amet quam congue, pulvinar urna et, congue diam. Suspendisse eu lorem massa. Integer sit amet posuere tellustea dictumst.</p>
                         <ul class="social-icons">
