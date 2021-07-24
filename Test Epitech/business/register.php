@@ -52,7 +52,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>PHPJabbers.com | Free Blog Website Template</title>
+        <title>Business Cards Manager</title>
 
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -103,7 +103,7 @@
                     <div class="col-md-5">
                         <div class="about-veno">
                             <div class="logo">
-                                <img src="img/footer_logo.png" alt="Venue Logo">
+                                <!--<img src="img/footer_logo.png" alt="Venue Logo">-->
                             </div>
                             <p>Mauris sit amet quam congue, pulvinar urna et, congue diam. Suspendisse eu lorem massa. Integer sit amet posuere tellustea dictumst.</p>
                             <ul class="social-icons">
