@@ -6,19 +6,19 @@
         Vérification si l'utilisateur existe.
         Si oui, on vérifie que le password reçu par le formulaire est le bon
         */
-    function inscription($bdd, $login, $pass)
+    function inscription($bdd, $email, $pass, $nom, $companie, $tel)
     {
-       $BDD = array();
-       $BDD['host'] = "localhost";
-       $BDD['user'] = "root";
-       $BDD['pass'] = "";
-       $BDD['db'] = "ep_test";
-       $mysqli = mysqli_connect($BDD['host'], $BDD['user'], $BDD['pass'], $BDD['db']);
-       if(!$mysqli) {
-            echo "Connexion non établie.";
-            exit;
-       }
+        $pass = password_hash($pass, PASSWORD_DEFAULT);
+        $stmt = $bdd->prepare("INSERT INTO profile (name, email, company, tel, password) VALUES (:name, :email, :company, :tel, :password)");
+        $stmt->bindParam(':name', $nom);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':company', $companie);
+        $stmt->bindParam(':tel', $tel);
+        $stmt->bindParam(':password', $pass);
 
+        // insertion d'une ligne
+        $stmt->execute();
+          
     }
     
 
@@ -37,10 +37,11 @@
         $email = $_POST['Email'];
         $pass = $_POST['password'];
         $nom = $_POST['nom'];
-        $companie = 
+        $companie = $_POST['nomCompanie'];
+        $tel = $_POST['numTel'];
 
         // on exécute la fonction connection
-        $user = inscription($bdd, $login, $pass);
+        $user = inscription($bdd, $email, $pass, $nom, $companie, $tel);
     
     }
     ?>
