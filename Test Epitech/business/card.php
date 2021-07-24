@@ -31,7 +31,7 @@
                         <button id="primary-nav-button" type="button">Menu</button>
                         <a href="index.html">
                             <div class="logo">
-                                <img src="img/logo.png" alt="Venue Logo">
+                               
                             </div>
                         </a>
                         <nav id="primary-nav" class="dropdown cf">
